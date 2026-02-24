@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>献金 - 聖書オンライン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>📖 聖書オンライン</h1>
+            <p>世界中の誰もが、いつでも、どこでも聖書を読めるように</p>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-item"><a href="index.html">トップ</a></div>
+                <div class="nav-item dropdown">
+                    <a href="#">聖書一覧</a>
+                    <div class="dropdown-content">
+                        <a href="japanese.html">📕 日本語訳</a>
+                        <a href="english.html">📘 英語訳</a>
+                        <a href="original.html">📜 原語</a>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="churches.html">教会検索</a></div>
+                <div class="nav-item"><a href="donation.html" class="active">献金</a></div>
+                <div class="nav-item"><a href="contact.html">お問い合わせ</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>💝 献金</h1>
+            <p>このプロジェクトをサポートしてください</p>
+        </div>
+
+        <!-- 献金について -->
+        <section style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h2 style="color: #667eea; margin-bottom: 20px;">🙏 あなたの献金で聖書を世界へ</h2>
+            <p style="line-height: 2; margin-bottom: 20px;">
+                聖書オンラインは、世界中の誰もが無料で聖書を読めるようにすることを使命としています。<br>
+                このプロジェクトは、皆様の献金によって運営されています。
+            </p>
+            
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #667eea;">
+                <h3 style="color: #667eea; margin-bottom: 15px;">献金の使い道</h3>
+                <ul style="line-height: 2;">
+                    <li>✅ サーバー運営費</li>
+                    <li>✅ AI翻訳サービス費用</li>
+                    <li>✅ 新しい言語への翻訳</li>
+                    <li>✅ モバイルアプリ開発</li>
+                    <li>✅ 教会検索機能の拡充</li>
+                </ul>
+            </div>
+
+            <p style="line-height: 2; color: #666;">
+                どんな金額でも大歓迎です。あなたの献金が、世界中の人々に聖書を届けます。<br>
+                全ての献金は透明性をもって報告させていただきます。
+            </p>
+        </section>
+
+        <!-- 献金方法 -->
+        <section style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h2 style="color: #667eea; margin-bottom: 30px;">💳 献金方法</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- クレジットカード -->
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 3em; margin-bottom: 15px;">💳</div>
+                    <h3 style="color: #667eea; margin-bottom: 15px;">クレジットカード</h3>
+                    <p style="color: #666; margin-bottom: 20px;">安全で簡単な決済</p>
+                    <button class="btn" onclick="alert('決済システムは現在準備中です')">今すぐ献金</button>
+                </div>
+
+                <!-- 銀行振込 -->
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 3em; margin-bottom: 15px;">🏦</div>
+                    <h3 style="color: #667eea; margin-bottom: 15px;">銀行振込</h3>
+                    <p style="color: #666; margin-bottom: 20px;">国内・海外対応</p>
+                    <button class="btn" onclick="showBankInfo()">振込先を表示</button>
+                </div>
+
+                <!-- PayPal -->
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 3em; margin-bottom: 15px;">🌐</div>
+                    <h3 style="color: #667eea; margin-bottom: 15px;">PayPal</h3>
+                    <p style="color: #666; margin-bottom: 20px;">世界中から献金可能</p>
+                    <button class="btn" onclick="alert('PayPal連携は準備中です')">PayPalで献金</button>
+                </div>
+            </div>
+
+            <!-- 銀行情報（初期非表示） -->
+            <div id="bankInfo" style="display: none; background: #fff3cd; padding: 25px; border-radius: 10px; margin-top: 30px; border-left: 5px solid #ffc107;">
+                <h3 style="color: #856404; margin-bottom: 15px;">🏦 振込先情報</h3>
+                <p style="color: #856404; line-height: 2;">
+                    <strong>銀行名:</strong> ○○銀行<br>
+                    <strong>支店名:</strong> ○○支店<br>
+                    <strong>口座種別:</strong> 普通<br>
+                    <strong>口座番号:</strong> 1234567<br>
+                    <strong>口座名義:</strong> 聖書オンライン<br><br>
+                    ※ 現在準備中です。実際の口座情報は後日公開いたします。
+                </p>
+            </div>
+        </section>
+
+        <!-- 定期献金 -->
+        <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 15px; text-align: center;">
+            <h2 style="margin-bottom: 20px;">🌟 定期献金パートナーになりませんか？</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px; opacity: 0.95;">
+                月額献金で、このプロジェクトを継続的に支えてください
+            </p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn" style="background: white; color: #667eea;" onclick="alert('準備中です')">月額¥500</button>
+                <button class="btn" style="background: white; color: #667eea;" onclick="alert('準備中です')">月額¥1,000</button>
+                <button class="btn" style="background: white; color: #667eea;" onclick="alert('準備中です')">月額¥3,000</button>
+                <button class="btn" style="background: white; color: #667eea;" onclick="alert('準備中です')">自由額</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>聖書オンラインについて</h3>
+                <p>世界中の誰もが、言語や地理的制約なく聖書を読めるようにすることを使命としています。</p>
+            </div>
+            <div class="footer-section">
+                <h3>聖書を読む</h3>
+                <ul>
+                    <li><a href="japanese.html">日本語訳</a></li>
+                    <li><a href="english.html">英語訳</a></li>
+                    <li><a href="original.html">原語</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>サイト情報</h3>
+                <ul>
+                    <li><a href="churches.html">教会検索</a></li>
+                    <li><a href="donation.html">献金</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 聖書オンライン - Bible Online</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showBankInfo() {
+            document.getElementById('bankInfo').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

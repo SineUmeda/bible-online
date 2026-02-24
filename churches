@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教会検索 - 聖書オンライン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>📖 聖書オンライン</h1>
+            <p>世界中の誰もが、いつでも、どこでも聖書を読めるように</p>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-item"><a href="index.html">トップ</a></div>
+                <div class="nav-item dropdown">
+                    <a href="#">聖書一覧</a>
+                    <div class="dropdown-content">
+                        <a href="japanese.html">📕 日本語訳</a>
+                        <a href="english.html">📘 英語訳</a>
+                        <a href="original.html">📜 原語</a>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="churches.html" class="active">教会検索</a></div>
+                <div class="nav-item"><a href="donation.html">献金</a></div>
+                <div class="nav-item"><a href="contact.html">お問い合わせ</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>⛪ 教会検索</h1>
+            <p>あなたの地域の教会を見つけましょう</p>
+        </div>
+
+        <!-- 検索フォーム -->
+        <section style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h2 style="color: #667eea; margin-bottom: 20px;">🔍 教会を検索</h2>
+            <form id="churchSearch">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div class="form-group">
+                        <label>国</label>
+                        <select id="country">
+                            <option value="">選択してください</option>
+                            <option value="japan">日本</option>
+                            <option value="usa">アメリカ</option>
+                            <option value="korea">韓国</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>都道府県 / 州</label>
+                        <input type="text" id="region" placeholder="例: 東京都">
+                    </div>
+                    <div class="form-group">
+                        <label>市区町村</label>
+                        <input type="text" id="city" placeholder="例: 渋谷区">
+                    </div>
+                    <div class="form-group">
+                        <label>宗派</label>
+                        <select id="denomination">
+                            <option value="">すべて</option>
+                            <option value="protestant">プロテスタント</option>
+                            <option value="catholic">カトリック</option>
+                            <option value="orthodox">正教会</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn" style="margin-top: 20px;">🔍 検索</button>
+            </form>
+        </section>
+
+        <!-- 検索結果 -->
+        <section>
+            <h2 style="color: #667eea; margin-bottom: 20px;">📍 検索結果</h2>
+            <div id="searchResults">
+                <!-- サンプル教会 -->
+                <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); margin-bottom: 20px; border-left: 5px solid #667eea;">
+                    <h3 style="color: #667eea; margin-bottom: 10px;">東京聖書教会</h3>
+                    <p><strong>📍 住所:</strong> 東京都千代田区神田1-1-1</p>
+                    <p><strong>🏛️ 宗派:</strong> プロテスタント</p>
+                    <p><strong>📞 電話:</strong> 03-1234-5678</p>
+                    <p><strong>🌐 ウェブサイト:</strong> <a href="#" style="color: #667eea;">https://example-church.jp</a></p>
+                    <p><strong>⏰ 礼拝時間:</strong> 日曜日 10:00-12:00</p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); margin-bottom: 20px; border-left: 5px solid #667eea;">
+                    <h3 style="color: #667eea; margin-bottom: 10px;">大阪キリスト教会</h3>
+                    <p><strong>📍 住所:</strong> 大阪府大阪市中央区2-2-2</p>
+                    <p><strong>🏛️ 宗派:</strong> カトリック</p>
+                    <p><strong>📞 電話:</strong> 06-2345-6789</p>
+                    <p><strong>⏰ 礼拝時間:</strong> 日曜日 9:00-11:00</p>
+                </div>
+
+                <!-- お知らせ -->
+                <div style="background: #fff3cd; padding: 20px; border-radius: 10px; border-left: 5px solid #ffc107; margin-top: 40px;">
+                    <h3 style="color: #856404;">📢 現在準備中</h3>
+                    <p style="color: #856404; margin-top: 10px;">
+                        教会検索機能は現在開発中です。<br>
+                        上記はサンプルデータです。実際の教会情報は順次追加していく予定です。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>聖書オンラインについて</h3>
+                <p>世界中の誰もが、言語や地理的制約なく聖書を読めるようにすることを使命としています。</p>
+            </div>
+            <div class="footer-section">
+                <h3>聖書を読む</h3>
+                <ul>
+                    <li><a href="japanese.html">日本語訳</a></li>
+                    <li><a href="english.html">英語訳</a></li>
+                    <li><a href="original.html">原語</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>サイト情報</h3>
+                <ul>
+                    <li><a href="churches.html">教会検索</a></li>
+                    <li><a href="donation.html">献金</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 聖書オンライン - Bible Online</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('churchSearch').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('検索機能は現在開発中です。実装をお待ちください。');
+        });
+    </script>
+</body>
+</html>

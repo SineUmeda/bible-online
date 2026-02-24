@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本語訳聖書 - 聖書オンライン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>📖 聖書オンライン</h1>
+            <p>世界中の誰もが、いつでも、どこでも聖書を読めるように</p>
+        </div>
+        
+        <nav>
+            <div class="nav-container">
+                <div class="nav-item"><a href="index.html">トップ</a></div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="active">聖書一覧</a>
+                    <div class="dropdown-content">
+                        <a href="japanese.html" style="background:#f0f0f0">📕 日本語訳</a>
+                        <a href="english.html">📘 英語訳</a>
+                        <a href="original.html">📜 原語</a>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="churches.html">教会検索</a></div>
+                <div class="nav-item"><a href="donation.html">献金</a></div>
+                <div class="nav-item"><a href="contact.html">お問い合わせ</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>📕 原語聖書</h1>
+            <p>原語聖書</p>
+        </div>
+
+        <!-- 新約聖書 -->
+        <section class="bible-section">
+            <h2>📘 新約聖書 (New Testament)</h2>
+            
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">福音書</h3>
+            <div class="books-grid">
+                <div class="book-card">
+                    <a href="japanese/matthew.html">
+                        <h3>マタイによる福音書</h3>
+                        <p>全28章</p>
+                    </a>
+                </div>
+                <div class="book-card">
+                    <a href="japanese/mark.html">
+                        <h3>マルコによる福音書</h3>
+                        <p>全16章</p>
+                    </a>
+                </div>
+                <div class="book-card">
+                    <a href="japanese/luke.html">
+                        <h3>ルカによる福音書</h3>
+                        <p>全24章</p>
+                    </a>
+                </div>
+                <div class="book-card">
+                    <a href="john-chapter-1.html">
+                        <h3>ヨハネによる福音書</h3>
+                        <p>全21章 | サンプル利用可能</p>
+                    </a>
+                </div>
+            </div>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">歴史書</h3>
+            <div class="books-grid">
+                <div class="book-card">
+                    <a href="japanese/acts.html">
+                        <h3>使徒言行録</h3>
+                        <p>全28章</p>
+                    </a>
+                </div>
+            </div>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">パウロ書簡</h3>
+            <div class="books-grid">
+                <div class="book-card">
+                    <h3>ローマの信徒への手紙</h3>
+                    <p>全16章</p>
+                </div>
+                <div class="book-card">
+                    <h3>コリントの信徒への手紙一</h3>
+                    <p>全16章</p>
+                </div>
+                <div class="book-card">
+                    <h3>コリントの信徒への手紙二</h3>
+                    <p>全13章</p>
+                </div>
+                <div class="book-card">
+                    <h3>ガラテヤの信徒への手紙</h3>
+                    <p>全6章</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 旧約聖書 -->
+        <section class="bible-section">
+            <h2>📕 旧約聖書 (Old Testament)</h2>
+            
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">律法 (モーセ五書)</h3>
+            <div class="books-grid">
+                <div class="book-card">
+                    <h3>創世記</h3>
+                    <p>全50章 | 準備中</p>
+                </div>
+                <div class="book-card">
+                    <h3>出エジプト記</h3>
+                    <p>全40章 | 準備中</p>
+                </div>
+                <div class="book-card">
+                    <h3>レビ記</h3>
+                    <p>全27章 | 準備中</p>
+                </div>
+                <div class="book-card">
+                    <h3>民数記</h3>
+                    <p>全36章 | 準備中</p>
+                </div>
+                <div class="book-card">
+                    <h3>申命記</h3>
+                    <p>全34章 | 準備中</p>
+                </div>
+            </div>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">詩歌・知恵文学</h3>
+            <div class="books-grid">
+                <div class="book-card">
+                    <h3>詩編</h3>
+                    <p>全150章 | 準備中</p>
+                </div>
+                <div class="book-card">
+                    <h3>箴言</h3>
+                    <p>全31章 | 準備中</p>
+                </div>
+                <div class="book-card">
+                    <h3>伝道の書</h3>
+                    <p>全12章 | 準備中</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- お知らせ -->
+        <div style="background: #fff3cd; padding: 20px; border-radius: 10px; border-left: 5px solid #ffc107; margin-top: 40px;">
+            <h3 style="color: #856404;">📢 現在準備中</h3>
+            <p style="color: #856404; margin-top: 10px;">
+                現在、ヨハネによる福音書のサンプルがご利用いただけます。<br>
+                他の書籍は順次追加していく予定です。
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>聖書オンラインについて</h3>
+                <p>世界中の誰もが、言語や地理的制約なく聖書を読めるようにすることを使命としています。</p>
+            </div>
+            <div class="footer-section">
+                <h3>聖書を読む</h3>
+                <ul>
+                    <li><a href="japanese.html">日本語訳</a></li>
+                    <li><a href="english.html">英語訳</a></li>
+                    <li><a href="original.html">原語</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>サイト情報</h3>
+                <ul>
+                    <li><a href="churches.html">教会検索</a></li>
+                    <li><a href="donation.html">献金</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 聖書オンライン - Bible Online</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
